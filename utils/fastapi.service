@@ -1,0 +1,17 @@
+[Unit]
+Description=FastAPI Application
+After=network.target
+StartLimitIntervalSec=100
+StartLimitBurst=5
+
+[Service]
+User={your_username}
+Group={your_group}
+WorkingDirectory=/opt/FASTAPI_SEED
+Environment="PATH=/opt/FASTAPI_SEED/.venv/bin"
+ExecStart=/opt/FASTAPI_SEED.venv/bin/python /opt/FASTAPI_SEED/api_service/main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+fastapi[all]
+uvicorn
+SQLAlchemy
+pymysql
+async-generator
+async-exit-stack
+cryptography
+pyyaml
+cryptography
+mysql-connector-python
+pandas
+sqlalchemy
+xlrd
+requests
+jwt
+pytz
+pymsteams
